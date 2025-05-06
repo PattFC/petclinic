@@ -1,0 +1,19 @@
+replicaCount: 1
+
+image:
+  repository: tuusuario/petclinic
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: []
+
+otel:
+  enabled: true
+  agentPath: /opt/opentelemetry-javaagent.jar
