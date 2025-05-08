@@ -1,10 +1,18 @@
 # Proyecto Final DevOps: PetClinic
 
-## 📄 Descripción General
-Este proyecto es una implementación de la aplicación PetClinic utilizando tecnologías y prácticas modernas de DevOps. Se ha dockerizado completamente, instrumentado con observabilidad y automatizado con CI/CD para cumplir los requisitos del Bootcamp DevOps de Código Facilito.
+## 📄 ¿Qué es PetClinic?
+
+PetClinic es una aplicación web construida con Spring Boot que simula la gestión de una clínica veterinaria. Permite registrar dueños, mascotas y sus visitas mediante una interfaz web intuitiva. Utiliza una arquitectura basada en el patrón MVC, persistencia con Spring Data JPA y una base de datos relacional MySQL.
+
+Esta aplicación es usada ampliamente con fines educativos para aprender el ecosistema Spring y se ha convertido en un proyecto de referencia para prácticas DevOps modernas.
 
 ---
 
+## 🧱 Arquitectura General
+
+![Arquitectura del proyecto](./docs/images/diagrama.png)
+
+---
 ## ⚖️ Tecnologías Utilizadas
 - Java 21 (Spring Boot)
 - Maven
@@ -21,6 +29,7 @@ Este proyecto es una implementación de la aplicación PetClinic utilizando tecn
 ---
 
 ## 🔄 Arquitectura
+
 ```
                         +--------------------+
                         |    GitHub Repo     |
