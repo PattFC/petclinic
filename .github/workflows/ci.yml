@@ -31,7 +31,7 @@ jobs:
         run: docker build -t petclinic-app ./app
 
       - name: Escaneo de seguridad con Trivy
-        uses: aquasecurity/trivy-action@v0.13.1
+        uses: aquasecurity/trivy-action@master
         with:
           scan-type: image
           image-ref: petclinic-app
