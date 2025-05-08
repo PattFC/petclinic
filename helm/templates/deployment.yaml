@@ -21,3 +21,13 @@ spec:
           env:
             - name: JAVA_TOOL_OPTIONS
               value: "-javaagent:{{ .Values.otel.agentPath }}"
+            - name: SPRING_PROFILES_ACTIVE
+              value: "mysql"
+            - name: spring.datasource.url
+              value: "jdbc:mysql://mysql:3306/petclinic"
+            - name: spring.datasource.username
+              value: "user"
+            - name: spring.datasource.password
+              value: "password"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "http://otel-collector:4317"

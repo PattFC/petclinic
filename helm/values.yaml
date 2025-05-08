@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: tuusuario/petclinic
+  repository: pattfc/petclinic
   tag: latest
   pullPolicy: IfNotPresent
 

@@ -8,5 +8,5 @@ spec:
     app: {{ .Release.Name }}
   ports:
     - protocol: TCP
-      port: {{ .Values.service.port }}
-      targetPort: 8080
+      port: {{ .Values.service.port }}     # El puerto externo configurable
+      targetPort: 8080                     # Puerto interno del contenedor (NO se cambia)
