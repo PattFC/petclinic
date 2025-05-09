@@ -58,6 +58,14 @@ Esta aplicación es usada ampliamente con fines educativos para aprender el ecos
 - Cuenta de GitHub
 - Cuenta de Docker Hub (para CI/CD)
 
+
+---
+
+## 📚 Documentación del Proyecto
+- [Despliegue](./docs/01-deploy.md)
+- [Runbooks](./docs/02-runbook.md)
+- [Monitoring](./docs/03-monitoring.md)
+
 ---
 
 ## 📦 Despliegue Local con Docker Compose
@@ -119,7 +127,7 @@ El repositorio incluye un pipeline GitHub Actions que:
 - Inicia sesión en Docker Hub
 - Etiqueta y sube la imagen como `latest`
 
-La imagen final puede encontrarse en: https://hub.docker.com/repository/docker/TU_USUARIO/petclinic
+La imagen final puede encontrarse en: https://hub.docker.com/r/pattfc/petclinic/tags
 
 ---
 
@@ -131,37 +139,6 @@ La imagen final puede encontrarse en: https://hub.docker.com/repository/docker/T
 | Prometheus `up = 0`               | Verifica puertos expuestos y red Docker o K8s    |
 | Jaeger no muestra trazas          | Verifica que OTEL esté configurado y conectado   |
 | CI/CD falla en Docker login       | Verificar secrets `DOCKER_USERNAME` y `DOCKER_PASSWORD` en GitHub |
-
----
-
-## 📂 Documentación de Despliegue
-
-1. Clonar el repo
-2. Configurar `.env` si se desea ocultar credenciales (en local)
-3. Elegir modo de despliegue:
-   - Docker Compose (`docker-compose up`)
-   - Kubernetes + Helm (Minikube)
-4. Validar endpoints y servicios
-5. Confirmar visualización en Prometheus y Jaeger
-6. (Opcional) Personalizar Grafana con dashboards
-
----
-
-## 💼 Autores
-- Tu nombre aquí
-- Proyecto para el Bootcamp DevOps de Código Facilito
-
----
-
-## ✅ Estado del Proyecto
-- [x] Docker Compose app + MySQL
-- [x] Observabilidad: Prometheus, Jaeger, OTEL
-- [x] CI/CD: GitHub Actions + Docker Hub
-- [x] Helm + Kubernetes (Minikube)
-- [ ] Dashboards en Grafana
-- [x] Seguridad (trivy, secrets avanzados)
-- [x] Red documentada y funcional
-
 
 ---
 
@@ -183,22 +160,21 @@ Paso relevante en `.github/workflows/ci.yml`:
     severity: CRITICAL,HIGH
 ```
 
-✅ Esto cumple con el requisito de seguridad exigido por el proyecto final.
+---
+
+## 💼 Autora
+- Patricia Fernández Caballero
+- Proyecto para el Bootcamp DevOps II de Código Facilito
 
 ---
 
-## 🏁 Confirmación final de cumplimiento del proyecto
+## ✅ Estado del Proyecto
+- [x] Docker Compose app + MySQL
+- [x] Observabilidad: Prometheus, Jaeger, OTEL
+- [x] CI/CD: GitHub Actions + Docker Hub
+- [x] Helm + Kubernetes (Minikube)
+- [x] Seguridad (trivy, secrets avanzados)
+- [x] Red documentada y funcional
 
-Este repositorio contiene **un único proyecto completo** que integra:
 
-- PetClinic funcional en Spring Boot
-- MySQL como base de datos relacional
-- Docker y Docker Compose
-- Stack de observabilidad (Prometheus, Jaeger, OTEL)
-- CI/CD con GitHub Actions
-- Imagen Docker pública en Docker Hub
-- Despliegue en Kubernetes con Helm (Minikube)
-- Escaneo de seguridad automático con Trivy
-- Documentación técnica clara
 
-> ✅ Todo conforme con los entregables del proyecto final de Código Facilito.
