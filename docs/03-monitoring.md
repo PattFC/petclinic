@@ -13,8 +13,8 @@ Prometheus se encarga de recolectar métricas de la aplicación y exponerlas par
   - Duración promedio de peticiones
   - Estado de endpoints
 
-📸 ![Prometheus](prometheus.png)
-![Prometheus](prometheus-1.png)
+📸 ![Prometheus](./images/prometheus.png)
+![Prometheus](./images/prometheus-1.png)
 
 ---
 
@@ -26,7 +26,7 @@ Jaeger permite visualizar trazas distribuidas para entender cómo se comportan l
 - Visualiza el flujo entre controladores y servicios de Spring Boot
 - Muy útil para detectar latencias o errores distribuidos
 
-📸 ![Jaeger](jaeger.png)
+📸 ![Jaeger](./images/jaeger.png)
 
 ---
 
@@ -40,7 +40,7 @@ Grafana se ha configurado para mostrar paneles visuales con métricas clave del 
   - Duración promedio
   - Por endpoint y método
 
-📸 ![Grafana](grafana.png)
+📸 ![Grafana](./images/grafana.png)
 
 ---
 
