@@ -174,7 +174,6 @@ Paso relevante en `.github/workflows/ci.yml`:
 - [x] CI/CD: GitHub Actions + Docker Hub
 - [x] Helm + Kubernetes (Minikube)
 - [x] Seguridad (trivy, secrets avanzados)
-- [x] Red documentada y funcional
 
 
 
