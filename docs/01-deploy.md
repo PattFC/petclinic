@@ -8,7 +8,7 @@ En este documento describo los pasos necesarios para desplegar la aplicación Pe
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu_usuario/petclinic.git
+git clone https://github.com/PattFC/petclinic.git
 cd petclinic
 ```
 
