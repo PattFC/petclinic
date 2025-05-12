@@ -2,6 +2,15 @@
 
 Este documento describe brevemente cómo se ha implementado la observabilidad de la aplicación PetClinic en el entorno del proyecto DevOps.
 
+## 📦 Herramientas involucradas
+
+- **Prometheus**: recolector de métricas
+- **Grafana**: visualización de métricas
+- **Jaeger**: trazas distribuidas
+- **OpenTelemetry**: instrumentación de la app Java
+- **Spring Actuator**: exposición de métricas y endpoints internos
+
+---
 ## 📊 Prometheus
 
 Prometheus se encarga de recolectar métricas de la aplicación y exponerlas para visualización.
@@ -41,16 +50,6 @@ Grafana se ha configurado para mostrar paneles visuales con métricas clave del 
   - Por endpoint y método
 
 📸 ![Grafana](./images/grafana.png)
-
----
-
-## 📦 Herramientas involucradas
-
-- **Prometheus**: recolector de métricas
-- **Grafana**: visualización de métricas
-- **Jaeger**: trazas distribuidas
-- **OpenTelemetry**: instrumentación de la app Java
-- **Spring Actuator**: exposición de métricas y endpoints internos
 
 ---
 

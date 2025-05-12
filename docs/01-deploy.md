@@ -1,6 +1,6 @@
 # 🚀 Guía de Despliegue de PetClinic
 
-Este documento describe los pasos necesarios para desplegar la aplicación PetClinic en dos entornos: Docker Compose y Kubernetes con Helm (Minikube).
+En este documento describo los pasos necesarios para desplegar la aplicación PetClinic en dos entornos: Docker Compose y Kubernetes con Helm (Minikube).
 
 ---
 

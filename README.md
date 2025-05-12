@@ -72,7 +72,7 @@ Esta aplicación es usada ampliamente con fines educativos para aprender el ecos
 
 ### 1. Clona el repositorio:
 ```bash
-git clone https://github.com/TU_USUARIO/petclinic.git
+git clone https://github.com/PattFC/petclinic.git
 cd petclinic
 ```
 
